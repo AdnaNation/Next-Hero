@@ -8,6 +8,10 @@ const Navbar = () => {
   const router = useRouter();
   const links = [
     {
+      title: "Home",
+      path: "/",
+    },
+    {
       title: "About",
       path: "/about",
     },
@@ -25,13 +29,21 @@ const Navbar = () => {
       title: "Blogs",
       path: "/blogs",
     },
+    {
+      title: "Categories",
+      path: "/categories",
+    },
   ];
   const handleLogin = () => {
     router.push("/login");
   };
 
+  if (pathName.includes("dashboard")) {
+    return <div className="bg-green-400">Dashboard layout</div>;
+  }
+
   return (
-    <nav className=" bg-gray-400 flex justify-between ">
+    <nav className=" bg-gray-400 flex justify-between h-16 ">
       <h6 className="text-3xl font-bold">
         Next.<span className="text-yellow-200">js</span>
       </h6>

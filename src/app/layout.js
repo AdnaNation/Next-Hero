@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
        <div className="h-screen">
        {children}
        </div>
-        <footer>
+        <footer className="h-40 bg-black text-white">
           This is the Footer
         </footer>
       </body>
