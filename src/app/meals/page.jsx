@@ -1,6 +1,10 @@
 import React from "react";
 import Meals from "../components/Meals";
 
+export const metadata = {
+  title: "Meals",
+  description: "Choose Your Meal",
+};
 const page = () => {
   return (
     <div className="p-12">

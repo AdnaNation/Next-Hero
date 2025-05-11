@@ -1,6 +1,10 @@
 import React from "react";
 import AboutContent from "../components/AboutContent";
 import Link from "next/link";
+export const metadata = {
+  title: "About",
+  description: "This is about page",
+};
 
 const page = () => {
   return (
